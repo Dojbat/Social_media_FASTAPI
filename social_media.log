@@ -1,0 +1,108 @@
+2025-11-10T19:52:21.975Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:52:21.979Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:52:27.211Z | DEBUG    |  social_media.routers.post:34 - SELECT posts.id, posts.body 
+FROM posts
+2025-11-10T19:52:27.219Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55789 - "GET /post HTTP/1.1" 200
+2025-11-10T19:53:23.137Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T19:53:23.245Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T19:53:23.248Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T19:53:23.250Z | INFO     |  uvicorn.error:94 - Finished server process [32628]
+2025-11-10T19:53:25.422Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:53:25.426Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:53:27.990Z | INFO     |  social_media.routers.post:32 - Getting all posts
+2025-11-10T19:53:27.992Z | DEBUG    |  social_media.routers.post:35 - SELECT posts.id, posts.body 
+FROM posts
+2025-11-10T19:53:27.997Z | INFO     |  uvicorn.access:476 - 127.0.0.1:52733 - "GET /post HTTP/1.1" 200
+2025-11-10T19:54:40.417Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T19:54:40.526Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T19:54:40.531Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T19:54:40.534Z | INFO     |  uvicorn.error:94 - Finished server process [21204]
+2025-11-10T19:54:42.405Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:54:42.409Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:54:56.197Z | INFO     |  social_media.routers.post:19 - Finding post with id 0
+2025-11-10T19:54:56.200Z | DEBUG    |  social_media.routers.post:21 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-11-10T19:54:56.207Z | INFO     |  uvicorn.access:476 - 127.0.0.1:52594 - "GET /post/0 HTTP/1.1" 404
+2025-11-10T19:55:00.149Z | INFO     |  uvicorn.access:476 - 127.0.0.1:52594 - "GET /post/0/comment HTTP/1.1" 200
+2025-11-10T19:56:38.747Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T19:56:38.858Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T19:56:38.863Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T19:56:38.868Z | INFO     |  uvicorn.error:94 - Finished server process [21736]
+2025-11-10T19:56:40.843Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:56:40.847Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:56:48.369Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T19:56:48.482Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T19:56:48.491Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T19:56:48.493Z | INFO     |  uvicorn.error:94 - Finished server process [21204]
+2025-11-10T19:56:50.603Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:56:50.607Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:59:40.916Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T19:59:41.025Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T19:59:41.028Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T19:59:41.030Z | INFO     |  uvicorn.error:94 - Finished server process [21332]
+2025-11-10T19:59:42.755Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-10T19:59:42.759Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-10T19:59:52.964Z | INFO     |  social_media.routers.post:19 - Finding post with id 0
+2025-11-10T19:59:52.966Z | DEBUG    |  social_media.routers.post:21 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-11-10T19:59:52.970Z | ERROR    |  social_media.routers.post:48 - Post with id 0 not found
+2025-11-10T19:59:52.972Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55957 - "POST /comment HTTP/1.1" 404
+2025-11-10T20:00:04.258Z | INFO     |  social_media.routers.post:27 - Creating Post
+2025-11-10T20:00:04.262Z | DEBUG    |  social_media.routers.post:30 - INSERT INTO posts (body) VALUES (:body)
+2025-11-10T20:00:04.271Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55963 - "POST /post HTTP/1.1" 201
+2025-11-10T20:00:12.994Z | INFO     |  social_media.routers.post:36 - Getting all posts
+2025-11-10T20:00:12.996Z | DEBUG    |  social_media.routers.post:39 - SELECT posts.id, posts.body 
+FROM posts
+2025-11-10T20:00:13.002Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55967 - "GET /post HTTP/1.1" 200
+2025-11-10T20:00:16.982Z | INFO     |  social_media.routers.post:58 - Getting commnets on post
+2025-11-10T20:00:16.983Z | DEBUG    |  social_media.routers.post:60 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-11-10T20:00:16.989Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55967 - "GET /post/0/comment HTTP/1.1" 200
+2025-11-10T20:00:19.353Z | INFO     |  social_media.routers.post:19 - Finding post with id 0
+2025-11-10T20:00:19.355Z | DEBUG    |  social_media.routers.post:21 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-11-10T20:00:19.359Z | ERROR    |  social_media.routers.post:68 - Post with post id 0 not found
+2025-11-10T20:00:19.360Z | INFO     |  uvicorn.access:476 - 127.0.0.1:55967 - "GET /post/0 HTTP/1.1" 404
+2025-11-10T20:51:39.149Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-10T20:51:39.258Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-10T20:51:39.262Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-10T20:51:39.266Z | INFO     |  uvicorn.error:94 - Finished server process [4880]
+2025-11-11T23:55:57.953Z | INFO     |  uvicorn.error:62 - Application startup complete.
+2025-11-11T23:55:57.958Z | INFO     |  uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-11T23:56:35.087Z | INFO     |  uvicorn.error:264 - Shutting down
+2025-11-11T23:56:35.194Z | INFO     |  uvicorn.error:67 - Waiting for application shutdown.
+2025-11-11T23:56:35.197Z | INFO     |  uvicorn.error:76 - Application shutdown complete.
+2025-11-11T23:56:35.198Z | INFO     |  uvicorn.error:94 - Finished server process [1300]
+2025-11-12T00:04:59.471Z | INFO     |  [-]uvicorn.error:62 - Application startup complete.
+2025-11-12T00:04:59.475Z | INFO     |  [-]uvicorn.error:216 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-11-12T00:05:25.622Z | INFO     |  [c1f6af92]social_media.routers.post:36 - Getting all posts
+2025-11-12T00:05:25.624Z | DEBUG    |  [c1f6af92]social_media.routers.post:39 - SELECT posts.id, posts.body 
+FROM posts
+2025-11-12T00:05:25.631Z | INFO     |  [c1f6af92]uvicorn.access:476 - 127.0.0.1:60633 - "GET /post HTTP/1.1" 200
+2025-11-12T00:05:59.099Z | INFO     |  [985062c4]social_media.routers.post:36 - Getting all posts
+2025-11-12T00:05:59.101Z | DEBUG    |  [985062c4]social_media.routers.post:39 - SELECT posts.id, posts.body 
+FROM posts
+2025-11-12T00:05:59.108Z | INFO     |  [985062c4]uvicorn.access:476 - 127.0.0.1:50078 - "GET /post HTTP/1.1" 200
+2025-11-12T00:07:50.972Z | INFO     |  [-]uvicorn.error:264 - Shutting down
+2025-11-12T00:07:51.081Z | INFO     |  [-]uvicorn.error:67 - Waiting for application shutdown.
+2025-11-12T00:07:51.084Z | INFO     |  [-]uvicorn.error:76 - Application shutdown complete.
+2025-11-12T00:07:51.086Z | INFO     |  [-]uvicorn.error:94 - Finished server process [15028]
+{"asctime": "2025-11-12T00:12:02", "msecs": 575.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2025-11-12T00:12:02", "msecs": 579.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 216, "message": "Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)", "color_message": "Uvicorn running on \u001b[1m%s://%s:%d\u001b[0m (Press CTRL+C to quit)"}
+{"asctime": "2025-11-12T00:12:06", "msecs": 376.0, "levelname": "INFO", "correlation_id": "03275629", "name": "social_media.routers.post", "lineno": 36, "message": "Getting all posts"}
+{"asctime": "2025-11-12T00:12:06", "msecs": 378.0, "levelname": "DEBUG", "correlation_id": "03275629", "name": "social_media.routers.post", "lineno": 39, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2025-11-12T00:12:06", "msecs": 385.0, "levelname": "INFO", "correlation_id": "03275629", "name": "uvicorn.access", "lineno": 476, "message": "127.0.0.1:62768 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2025-11-12T00:12:14", "msecs": 674.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 264, "message": "Shutting down"}
+{"asctime": "2025-11-12T00:12:14", "msecs": 784.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2025-11-12T00:12:14", "msecs": 788.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2025-11-12T00:12:14", "msecs": 791.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 94, "message": "Finished server process [12576]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-11-12T00:25:01", "msecs": 804.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2025-11-12T00:25:01", "msecs": 807.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 216, "message": "Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)", "color_message": "Uvicorn running on \u001b[1m%s://%s:%d\u001b[0m (Press CTRL+C to quit)"}
+{"asctime": "2025-11-12T00:25:03", "msecs": 331.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 264, "message": "Shutting down"}
+{"asctime": "2025-11-12T00:25:03", "msecs": 440.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2025-11-12T00:25:03", "msecs": 445.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2025-11-12T00:25:03", "msecs": 447.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 94, "message": "Finished server process [23268]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
