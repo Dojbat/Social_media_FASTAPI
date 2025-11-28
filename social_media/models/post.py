@@ -1,19 +1,30 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel
+
 
 class UserPostIn(BaseModel):
     body: str
 
+
 class UserPost(UserPostIn):
-    model_config = ConfigDict(from_attributes=True)
     id: int
+    user_id: int
+
+    class Config:
+        orm_mode = True
+
 
 class CommentIn(BaseModel):
     post_id: int
     body: str
 
+
 class Comment(CommentIn):
-    model_config = ConfigDict(from_attributes=True)
     id: int
+    user_id: int
+
+    class Config:
+        orm_mode = True
+
 
 class UserPostWithComments(BaseModel):
     post: UserPost

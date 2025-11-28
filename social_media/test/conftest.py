@@ -27,12 +27,14 @@ async def db() -> AsyncGenerator:
     yield
     await database.disconnect()
 
+
 @pytest.fixture()
 async def async_client(client) -> AsyncGenerator:
     async with AsyncClient(
         transport=ASGITransport(app=app), base_url="http://test"
     ) as ac:
         yield ac
+
 
 @pytest.fixture()
 async def registered_user(async_client: AsyncClient) -> dict:
@@ -42,3 +44,15 @@ async def registered_user(async_client: AsyncClient) -> dict:
     user = await database.fetch_one(query)
     user_details["id"] = user.id
     return user_details
+
+
+@pytest.fixture()
+async def logged_in_token(async_client: AsyncClient, registered_user: dict) -> str:
+    response = await async_client.post(
+        "/token",
+        data={
+            "username": registered_user["email"],
+            "password": registered_user["password"],
+        },
+    )
+    return response.json()["access_token"]
